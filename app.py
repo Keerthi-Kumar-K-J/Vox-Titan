@@ -1,8 +1,9 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS  # Import CORS
 
 app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
 
-# Together AI API Key (Replace with your key)
 API_KEY = "cdb4c13f2cdcb4a33b24939aa7915bf9d17d0bddd5c88033dd7766e08853e698"
 TOGETHER_API_URL = "https://api.together.xyz/v1/chat/completions"
 
