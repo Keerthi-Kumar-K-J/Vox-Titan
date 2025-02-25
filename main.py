@@ -8,9 +8,9 @@ app = FastAPI()
 # Allow frontend to communicate with backend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://keerthi-kumar-k-j.github.io/Vox-Titan/"],  # Change this to specific origins in production
+    allow_origins=["*"],  # Change this to specific origins in production
     allow_credentials=True,
-    allow_methods=["POST","GET"],
+    allow_methods=["*"],
     allow_headers=["*"],
 )
 
