@@ -14,7 +14,7 @@ def chat():
             "Content-Type": "application/json"
         },
         json={
-            "model": "togethercomputer/llama-2-70b-chat",  # Or any other model
+            "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",  # Or any other model
             "messages": [{"role": "user", "content": user_input}]
         }
     )
